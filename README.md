@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- HACKER TERMINAL HEADER -->
-<img src="https://capsule-render.vercel.app/api?type=terminal&color=0d1117&text=root@giovdevcode:~/my-card&fontSize=30&fontAlignY=40" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&text=root@giovdevcode:~/my-card&fontSize=30&fontAlignY=50&fontColor=00FF00" width="100%"/>
 
 <br />
 
