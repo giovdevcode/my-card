@@ -3,59 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giovane | Digital Card</title>
+    <title>GIOVANE | Executive Portal</title>
+    
+    <!-- PRIMARY METADATA (SEO) -->
+    <meta property="og:title" content="Giovane | Systems Architect">
+    <meta property="og:description" content="Operational Lead at giovdevcode Mainframe">
+    <meta property="og:image" content="https://github.com/giovdevcode.png">
+
+    <!-- HIGH-END ICON ENGINE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
+        :root {
+            --sapphire: #0047ab;
+            --matrix: #00FF00;
+            --obsidian: #0d1117;
+            --glass: rgba(22, 27, 34, 0.8);
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0d1117;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--obsidian);
+            background-image: radial-gradient(circle at top right, #001a3d, transparent);
             color: white;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            padding: 20px;
         }
+
         .card {
-            background: #161b22;
-            padding: 40px;
-            border-radius: 30px;
-            border: 2px solid #4169E1;
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 40px 30px;
+            border-radius: 24px;
+            border: 1px solid rgba(0, 71, 171, 0.3);
             text-align: center;
-            width: 320px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            width: 100%;
+            max-width: 360px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         }
-        img {
-            width: 120px;
-            height: 120px;
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
-            border: 3px solid #4169E1;
-            object-fit: cover;
+            border: 2px solid var(--sapphire);
+            padding: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 71, 171, 0.4);
         }
-        h1 { color: #4169E1; margin: 20px 0 5px 0; font-size: 28px; }
-        p { color: #8b949e; margin-bottom: 30px; letter-spacing: 1px; }
-        .btn {
-            display: block;
-            background: #4169E1;
+
+        h1 { 
+            font-size: 26px; 
+            letter-spacing: 2px; 
+            margin: 0; 
             color: white;
-            padding: 12px;
-            margin: 10px 0;
+            font-weight: 800;
+        }
+
+        .title { 
+            color: var(--sapphire); 
+            font-size: 12px; 
+            font-weight: 700; 
+            text-transform: uppercase; 
+            margin-top: 5px;
+            letter-spacing: 3px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background: rgba(0, 255, 0, 0.1);
+            color: var(--matrix);
+            font-size: 10px;
+            padding: 4px 12px;
+            border-radius: 100px;
+            margin: 15px 0 25px 0;
+            border: 1px solid var(--matrix);
+            font-weight: 600;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+            padding: 14px;
+            margin: 12px 0;
             border-radius: 12px;
             text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
+            font-weight: 600;
+            font-size: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
         }
-        .btn:hover { background: #3152bc; transform: translateY(-3px); }
+
+        .btn:hover {
+            background: var(--sapphire);
+            border-color: var(--sapphire);
+            transform: translateY(-2px);
+        }
+
+        .btn-logic {
+            border: 1px solid var(--matrix);
+            color: var(--matrix);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 10px;
+            color: #484f58;
+            letter-spacing: 1px;
+        }
     </style>
 </head>
 <body>
     <div class="card">
-        <!-- This automatically pulls your profile picture (the dog) -->
-        <img src="https://github.com/giovdevcode.png" alt="Giovane">
+        <img src="https://github.com/giovdevcode.png" class="profile-img" alt="Architect">
         <h1>GIOVANE</h1>
-        <p>ARCHITECT & DEVELOPER</p>
-        <a href="https://github.com/giovdevcode" class="btn">GitHub Portfolio</a>
-        <a href="https://www.facebook.com/share/193tPNrspt/" class="btn">Facebook</a>
-        <a href="https://www.instagram.com/giovane.dev" class="btn">Instagram</a>
+        <div class="title">Systems Architect</div>
+        <div class="status-badge"><i class="fa-solid fa-circle-check"></i> NODE ONLINE</div>
+        
+        <!-- CORE ACCESS LINKS -->
+        <a href="https://github.com/giovdevcode" class="btn">
+            <i class="fa-brands fa-github"></i> Global Mainframe
+        </a>
+        
+        <a href="https://github.com/giovdevcode/architect-intelligence" class="btn btn-logic">
+            <i class="fa-solid fa-microchip"></i> Neural Logic Core
+        </a>
+
+        <a href="https://www.facebook.com/share/17coC7fRhN/" class="btn">
+            <i class="fa-brands fa-facebook"></i> Secure FB Link
+        </a>
+
+        <a href="https://instagram.com/giovane.dev" class="btn">
+            <i class="fa-brands fa-instagram"></i> Initiate IG Port
+        </a>
+
+        <div class="footer">OPERATIONAL DATA v1.1.0 | © 2026 GIOVDEVCODE</div>
     </div>
 </body>
 </html>
