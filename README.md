@@ -1,14 +1,14 @@
 <!-- 
   PROJECT ID: GIOV-CARD-ALPHA
   CLASSIFICATION: ELITE INTERFACE DEPLOYMENT
-  PALETTE: #0047ab | #00FF00 | #0d1117
+  VERSION: 2.1.0-STABLE
   STATUS: LIVE / OPERATIONAL
 -->
 
 <div align="center">
 
-<!-- 1. HIGH-END TERMINAL HEADER -->
-<img src="https://capsule-render.vercel.app/api?type=terminal&color=0d1117&text=root@giovdevcode:~/my-card&fontSize=35&fontAlignY=50&fontColor=00FF00" width="100%"/>
+<!-- 1. STABILIZED TERMINAL HEADER -->
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&text=root@giovdevcode:~/my-card&fontSize=35&fontAlignY=50&fontColor=00FF00" width="100%"/>
 
 <br />
 
